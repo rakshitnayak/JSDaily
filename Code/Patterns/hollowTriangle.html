@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hollow pyramid star pattern - javascript</title>
+  </head>
+
+  <body>
+    <h1>Hollow pyramid star pattern in javascript</h1>
+    <script>
+      let n = 6;
+      let string = "";
+
+      for (let i = 1; i <= n; i++) {
+        for (let j = 0; j < i; j++) {
+          if (i === n) {
+            string += "*";
+          } else {
+            if (j == 0 || j == i - 1) {
+              string += "*";
+            } else {
+              string += " ";
+            }
+          }
+        }
+        string += "\n";
+      }
+
+      document.write(`<pre>${string}</pre>`);
+    </script>
+  </body>
+</html>
