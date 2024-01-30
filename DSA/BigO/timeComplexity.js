@@ -1,5 +1,11 @@
 /**
 
+
+what is time complexity?
+How much time a function/algorithm takes or  The time required by the algorithm to solve given problem is called time complexity 
+of the algorithm. Time complexity is very useful measure in algorithm analysis
+
+
 Time complexites for loops
 
 let i;
