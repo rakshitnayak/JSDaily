@@ -3,3 +3,36 @@ A process (a function in our case) that calls itself
 
 How recursive functions work
 Invoke the same function with a different input until you reach your base case
+
+Base Case
+- The condition when the recursion ends.
+- This is the most important concept to understand 
+
+So the two essential parts of a recursive function!
+- Base Case
+- Different Input
+
+recursive function example
+
+function countDown(num){
+    if(num <= 0) {
+        console.log("All done!");
+        return;
+    }
+    console.log(num);
+    num--;
+    countDown(num);
+}
+
+Although the above function can be written using for loop logic, this is just a demonsration for recursion
+
+Now lets call countDown(3);
+-it will console.log 3
+-it will now call countDown(2)
+-it will console.log 2
+-it will now call countDown(1)
+-it will console.log 1
+-it will now call countDown(0)
+-it will console.log("All done!)
+
+
