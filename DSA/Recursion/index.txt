@@ -36,3 +36,7 @@ Now lets call countDown(3);
 -it will console.log("All done!)
 
 
+Where things go wrong?
+- No base case
+- Forgetting to return or returning the wrong thing!
+- Stack overflow! 
