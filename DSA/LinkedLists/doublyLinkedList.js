@@ -79,3 +79,39 @@ DoublyLinkedList.prototype.deleteFirstNode = function () {
     this.head.prev = null;
   }
 };
+
+// Delete Last node
+DoublyLinkedList.prototype.deleteLastNode = function () {
+  if (!this.tail) {
+    return; // nothing to delete in when there is no tail/last node
+  }
+
+  // when there is only single node
+  if (this.head === this.tail) {
+    this.head = null;
+    this.tail = null;
+  } else {
+    this.tail = this.tail.prev;
+    this.tail.next = null;
+  }
+};
+
+// Reverse doubly linked list
+DoublyLinkedList.prototype.reverse = function () {
+  let current = this.head;
+  let temp = null;
+
+  while (current != null) {
+    temp = current.prev;
+    current.prev = current.next;
+    current.next = temp;
+
+    // move to next node
+    current = current.prev;
+  }
+
+  if (temp != null) {
+    this.tail = this.head;
+    this.head = temp.prev;
+  }
+};
