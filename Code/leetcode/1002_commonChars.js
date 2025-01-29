@@ -1,3 +1,5 @@
+// 1002. Find Common Characters
+
 var commonChars = function (words) {
   const charMaps = [];
   const result = [];

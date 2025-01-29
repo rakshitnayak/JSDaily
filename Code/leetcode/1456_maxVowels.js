@@ -1,3 +1,4 @@
+// lc 1456
 var maxVowels = function (s, k) {
   let vowels = new Set(["a", "e", "i", "o", "u"]);
 
@@ -7,7 +8,7 @@ var maxVowels = function (s, k) {
   for (let i = 0; i < k; i++) {
     if (vowels.has(s[i])) currentVowelCount++;
   }
-  
+
   maxVowelCount = currentVowelCount;
 
   for (let i = k; i < s.length; i++) {
@@ -20,4 +21,4 @@ var maxVowels = function (s, k) {
   return maxVowelCount;
 };
 
-maxVowels("leetcode", 3)
+maxVowels("leetcode", 3);
